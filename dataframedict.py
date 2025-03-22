@@ -8,4 +8,11 @@ pop = pd.Series({'California': 38332521, 'Texas': 26448193,
                  'Illinois': 12882135})
 data = pd.DataFrame({'area':area, 'pop':pop})
 print("Data: ", data)
+print("\nData area:\n",data['area'])
+print(" \nData pop:\n",data['pop'])   
+print("\nData area['California']:\n",data['area']['California'])    
+data1= data['density'] = data['pop'] / data['area']
+print("This data: \n", data1) 
+print(data.values)
 
+print(data.T)
